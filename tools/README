@@ -1,11 +1,17 @@
 Most of the documentation can be found in the FreeDict HOWTO at
 
-	http://freedict.org/howto
+    https://github.com/freedict/fd-dictionaries/wiki
+
+and for an devel introduction see
+
+    https://github.com/freedict/fd-dictionaries/wiki/FreeDict-HOWTO
+
 
 The following lines may get you started on some requirements:
 
-The "blessed" conversion process from .tei to DICT database format
-is now based on XSLT stylesheets, an XSLT processor and dictfmt.
+The conversion process from .tei to DICT database format is based on XSLT
+stylesheets, an XSLT processor and dictfmt. Try `apt-get build-dep freedict` to
+get all dependencies at once.
 It is still possible to use xmltei2xmldict.pl though, but the DICT
 compatibility may suffer.
 
