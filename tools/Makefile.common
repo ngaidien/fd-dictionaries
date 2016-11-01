@@ -42,10 +42,6 @@ version := $(subst $(space),_,$(version1))
 # default target
 ################
 
-#	$(MAKE) release-tei-tbz2 -- took it out as we don't use it at all...
-#	-$(MAKE) release-evolutionary
-#	$(MAKE) release-bedic
-#	$(MAKE) release-stardict
 #	-$(MAKE) release-aspell
 #	-$(MAKE) release-d4m
 #	-$(MAKE) release-fo
@@ -58,6 +54,7 @@ version := $(subst $(space),_,$(version1))
 all:
 	$(MAKE) dist
 	$(MAKE) release-dict-tbz2
+	$(MAKE) release-stardict
 
 
 ##################################################
@@ -102,14 +99,6 @@ dirs:
 	@if [ ! -d $(FREEDICTDIR)/release/dict-tbz2 ]; then \
 		mkdir $(FREEDICTDIR)/release/dict-tbz2; fi
 
-#############################################################
-#### rules how to create dict database format in old way
-#############################################################
-
-%-oldstyle.dict %-oldstyle.index: %.tei query-dictd
-	export SGML_CATALOG_FILES="$(XMLSOC):$(SGML_CATALOG_FILES)";\
-	$(tei2dict) -f $<-oldstyle $(TEI2DICTFLAGS) -t $(xsldir)/tei2txt.xsl
-
 %.dz: %
 	dictzip -k $<
 
@@ -118,30 +107,6 @@ dirs:
 
 %.tar.bz2: %.dict.dz %.index
 	tar cjf $*.tar.bz2 $*.dict.dz $*.index
-
-release-dict-tgz-oldstyle: $(dictname)-oldstyle.tar.gz dirs
-	cp $(dictname).tar.gz \
-	$(FREEDICTDIR)/release/dict-tgz/freedict-$(dictname)-$(version).tar.gz
-
-release-dict-tgz-reverse-oldstyle: $(rdictname)-oldstyle.tar.gz dirs
-	cp $(rdictname).tar.gz \
-	$(FREEDICTDIR)/release/dict-tgz/freedict-$(dictname)-$(version)-reverse.tar.gz
-
-release-dict-tbz2-oldstyle: $(dictname)-oldstyle.tar.bz2 dirs
-	cp $(dictname).tar.bz2 \
-	$(FREEDICTDIR)/release/dict-bz2/freedict-$(dictname)-$(version).tar.bz2
-
-release-dict-tbz2-reverse-oldstyle: $(rdictname)-oldstyle.tar.bz2 dirs
-	cp $(rdictname).tar.bz2 \
-	$(FREEDICTDIR)/release/dict-bz2/freedict-$(dictname)-$(version)-reverse.tar.bz2
-
-reverse-oldstyle: $(dictname).tei
-	@echo "Will generate $(rdictname):"
-	export SGML_CATALOG_FILES="$(XMLSOC):$(SGML_CATALOG_FILES)";\
-	$(tei2dict) -f $< -r $(TEI2DICTFLAGS) -t $(xsldir)/tei2txt.xsl
-	mv $(dictname).index $(rdictname).index
-	mv $(dictname).dict $(rdictname).dict
-	dictzip -k $(rdictname).dict
 
 ######################################################################
 #### targets for c5/dictfmt conversion style into dict database format
