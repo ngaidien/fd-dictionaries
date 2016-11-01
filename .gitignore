@@ -42,6 +42,7 @@ howto/inc/la1-la2.template.tei.escaped.xml
 *.index
 *.mo
 */__pycache__
+*-*/stardict.build
 release
 website/editordoc.html
 website/flags-bedic.php
