@@ -1,6 +1,6 @@
 # Makefile that can call `make' for all dictionary modules
 
-include Makefile.config
+include Makefile.include/Makefile.config
 
 BUILD = set -e && for file in $(FREEDICTDIR)/???-???; do $(MAKE) -C $$file $@; done
 

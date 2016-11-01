@@ -48,7 +48,7 @@ make -f Makefile.tools install DESTDIR=$RPM_BUILD_ROOT PREFIX=usr
 /usr/src/freedict/tools/xmltei2xmldict.pl
 /usr/src/freedict/tools/Makefile
 /usr/src/freedict/tools/Makefile.common
-%config /usr/src/freedict/tools/Makefile.config
+%config /usr/src/freedict/tools/Makefile.include/config
 /usr/src/freedict/tools/add-freedict.sh
 /usr/src/freedict/tools/dict-configure.sh
 /usr/src/freedict/tools/dict.py
