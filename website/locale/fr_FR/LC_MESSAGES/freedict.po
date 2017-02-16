@@ -1,17 +1,17 @@
 # French translation for Freedict Website
-# Copyright (C) 2006-2016
+# Copyright (C) 2006-2017
 # This file is distributed under the same license as the FreeDict website.
 # noname <lelaulau@yahoo.fr>, 2006.
-# Denis <denisarnuad@yahoo.fr>, 2009-2016.
+# Denis <denisarnuad@yahoo.fr>, 2009-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: freedict-beta@lists.sf.net\n"
-"POT-Creation-Date: 2016-09-01 21:36+0200\n"
-"PO-Revision-Date: 2016-10-09 22:46+0200\n"
+"POT-Creation-Date: 2017-01-24 23:17+0100\n"
+"PO-Revision-Date: 2017-01-27 21:42+0100\n"
 "Last-Translator: Denis <denisarnuad@yahoo.fr>\n"
-"Language-Team: breton <>\n"
+"Language-Team: French <>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgstr "un plugin peut être nécessaire, par exemple "
 msgid "Adobe's"
 msgstr "celui d'Adobe"
 
-#: db-as-xml.php:4 db-as-xml.php:8 menu.php:91
+#: db-as-xml.php:4 db-as-xml.php:8 menu.php:95
 msgid "Database as XML"
 msgstr "Base de donnée XML"
 
@@ -145,36 +145,40 @@ msgid "If you use %sDebian%s unstable, you can add this to your %s:"
 msgstr ""
 "Si vous utilisez %sDebian%s instable, vous pouvez ajouter ceci à votre %s :"
 
-#: flags-dict-tgz.php:7 flags-dict-tgz.php:9
+#: flags-bedic.php:7 flags-bedic.php:9 flags-dict-tgz.php:7
+#: flags-dict-tgz.php:9 flags-evolutionary.php:7 flags-evolutionary.php:9
 msgid "DICT servers"
 msgstr "serveurs DICT"
 
-#: flags-dict-tgz.php:7 flags-dict-tgz.php:9
+#: flags-bedic.php:7 flags-bedic.php:9 flags-dict-tgz.php:7
+#: flags-dict-tgz.php:9 flags-evolutionary.php:7 flags-evolutionary.php:9
 msgid "on Windows/Linux"
 msgstr "sur Windows/Linux"
 
-#: flags-dict-tgz.php:11
+#: flags-bedic.php:11 flags-dict-tgz.php:11 flags-evolutionary.php:11
 msgid "Mobipocket"
 msgstr "Mobipocket"
 
-#: flags-dict-tgz.php:11 flags-dict-tgz.php:13
+#: flags-bedic.php:11 flags-bedic.php:13 flags-dict-tgz.php:11
+#: flags-dict-tgz.php:13 flags-evolutionary.php:11 flags-evolutionary.php:13
 msgid "on WinCE/Palm"
 msgstr "sur WinCE/Palm"
 
-#: flags-dict-tgz.php:15
+#: flags-bedic.php:15 flags-dict-tgz.php:15 flags-evolutionary.php:15
 msgid "on Zaurus/Qt"
 msgstr "sur Zaurus/Qt"
 
-#: flags-dict-tgz.php:23 flags-dict-tgz.php:27
+#: flags-bedic.php:23 flags-bedic.php:27 flags-dict-tgz.php:23
+#: flags-dict-tgz.php:27 flags-evolutionary.php:23 flags-evolutionary.php:27
 msgid "Download / Matrix View"
 msgstr "Télécharger / Vue de la matrice"
 
-#: flags-dict-tgz.php:29
+#: flags-bedic.php:29 flags-dict-tgz.php:29 flags-evolutionary.php:29
 #, php-format
 msgid "All downloads are for platform %s."
 msgstr "Tous les téléchargements sont pour la plateforme %s."
 
-#: flags-dict-tgz.php:34
+#: flags-bedic.php:34 flags-dict-tgz.php:34 flags-evolutionary.php:34
 #, php-format
 msgid ""
 "Another application understanding this file format is %1sWordtrans%2s, a KDE "
@@ -183,7 +187,7 @@ msgstr ""
 "Une autre application comprenant ce format de fichier est %1sWordtrans%2s, "
 "une application KDE."
 
-#: flags-dict-tgz.php:40
+#: flags-bedic.php:40 flags-dict-tgz.php:40 flags-evolutionary.php:40
 msgid ""
 "BEDic has two frontends: ZBEDic, which runs on the Zaurus\n"
 "     Linux PDA from Sharp, and QBEDic, which runs on Linux/Qt. BEDic is\n"
@@ -194,19 +198,19 @@ msgstr ""
 "     Linux PDA de Sharp, et QBEDic, qui tourne sur Linux/Qt. BEDic est\n"
 "     semblable à stardict car il n'a pas une approche client/serveur"
 
-#: flags-dict-tgz.php:48
+#: flags-bedic.php:48 flags-dict-tgz.php:48 flags-evolutionary.php:48
 msgid "Select your language combination!"
 msgstr "Choisissez votre combinaison de langues !"
 
-#: flags-dict-tgz.php:51
+#: flags-bedic.php:51 flags-dict-tgz.php:51 flags-evolutionary.php:51
 msgid "Source Language / Size in MB"
 msgstr "Langage source / Taille en Mo"
 
-#: flags-dict-tgz.php:54
+#: flags-bedic.php:54 flags-dict-tgz.php:54 flags-evolutionary.php:54
 msgid "Destination<br />Language"
 msgstr "Langue de<br /> destination"
 
-#: flags-dict-tgz.php:146
+#: flags-bedic.php:146 flags-dict-tgz.php:146 flags-evolutionary.php:146
 msgid ""
 "Please click on the links to get to the SourceForge\n"
 "Download Mirror selection page. Right-Click and Save-As will not work\n"
@@ -306,26 +310,26 @@ msgid "Sources"
 msgstr "Sources"
 
 #: menu.php:80
-msgid "SourceForge Project Page"
-msgstr "Page du projet sur SourceForge"
+msgid "GitHub Project Page"
+msgstr "Page du projet sur GitHub"
 
-#: menu.php:83
+#: menu.php:87
 msgid "Mailinglists"
 msgstr "Listes de diffusion"
 
-#: menu.php:85
+#: menu.php:89
 msgid "Bugs"
 msgstr "Bugs"
 
-#: menu.php:87
+#: menu.php:91
 msgid "Wiki"
 msgstr "Wiki"
 
-#: menu.php:90 weblang.php:5 weblang.php:9
+#: menu.php:94 weblang.php:5 weblang.php:9
 msgid "Translate this Website"
 msgstr "Traduire ce site"
 
-#: menu.php:95
+#: menu.php:99
 msgid "FreeDict Project"
 msgstr "Projet FreeDict"
 
@@ -340,54 +344,54 @@ msgstr "Horst Eyermann, Michael Bunk et %1$sbeaucoup d'autres%2$s"
 
 #: overview.php:14
 msgid ""
-"On this page you can find translating dictionary databases.\n"
+"On this page you can find translation dictionary databases.\n"
 "The databases are free. That means they are available\n"
-"under the GNU General Public License or a less restrictive\n"
-"license. Check with the license of the respective database!"
+"under a free license like the GNU GPL or similar. Please check with the "
+"respective dictionary."
 msgstr ""
 "Sur cette page vous pouvez trouver des dictionnaires bilingues.\n"
 "Les bases de données sont libres. Cela signifie qu'ils sont disponibles\n"
-"sous licence GNU (General Public License) ou une licence moins restrictive.\n"
-"Vérifiez la licence de la base de donnée qui vous intéresse!"
+"sous licence GNU GPL ou une licence similaire.\n"
+"Vérifiez la licence de la base de donnée qui vous intéresse !"
 
-#: overview.php:19
+#: overview.php:18
 #, php-format
 msgid ""
-"The databases are available in XML. We support the conversion of FreeDict \n"
-"databases from their native %4$sTEI%2$s format for use with %1$sdictd, the "
-"DICT dictionary server%2$s and other\n"
-"similar servers. Our own dictionary front-end can be found at %3$shttp://"
-"freedict.org/dict%2$s. Please note that\n"
-"on that page, you can also install a plugin that will let you query FreeDict "
+"The databases are available in TEI, a XML language to encode human language. "
+"This way the dictionaries can be used both by humans and machines.\n"
+"We support the conversion of FreeDict databases from their native %4$sTEI"
+"%2$s\n"
+"format for use with %1$sdictd, the DICT dictionary server%2$s and other\n"
+"similar servers. Our own online dictionary lookup page can be found at "
+"%3$shttp://freedict.org/dict%2$s. Please note that\n"
+"you can also install a plugin on that page which will let you query FreeDict "
 "dictionaries straight from your\n"
 "browser search window."
 msgstr ""
-"Les dictionnaires sont disponibles au format XML. Nous assurons la "
-"conversion du\n"
-"format natif %4$sTEI%2$s pour utilisation avec %1$sdictd, le serveur de "
-"dictionnaire DICT%2$s et d'autres\n"
-"serveurs analogues. Vous pouvez consulter notre propre inteface à l'adresse "
+"Les dictionnaires sont disponibles au format TEI, qui est un format XML. "
+"Ainsi, les dictionnaires peuvent être utilisés par des humains comme par des "
+"machines.\n"
+"Nous assurons la conversion du format natif %4$sTEI%2$s pour utilisation "
+"avec %1$sdictd, le serveur de dictionnaire DICT%2$s et d'autres serveurs "
+"analogues. Vous pouvez consulter notre propre interface à l'adresse "
 "suivante  %3$shttp://freedict.org/dict%2$s. \n"
 "Notez que, de cette page, vous pouvez aussi installer un plugin permettant "
-"d'interroger un dictionnaire \n"
-"Freedict directement depuis la fenêtre de recherche de votre navigateur."
+"d'interroger un dictionnaire Freedict directement depuis la fenêtre de "
+"recherche de votre navigateur."
 
 #: overview.php:26
 msgid ""
-"But there are other applications for our databases as well. You could use\n"
-"them to generate wordlists for spellcheckers and to create new dictionaries, "
-"to import them \n"
+"There are other applications for our databases as well. It is\n"
+"possible to use them to generate wordlists for spellcheckers and to create "
+"new dictionaries, to import them \n"
 "into your own terminological database and even to print your own dictionary "
 "with XSL-FO."
 msgstr ""
 "Mais il y a aussi d'autres applications pour nos base de données. Vous "
-"pouvez les\n"
-"utiliser pour générer des listes de mots pour des correcteurs "
-"orthographiques\n"
-"et des nouveaux dictionnaires, pour créer des corpora linguistiques, pour "
-"les importer\n"
-"dans votre propre base de données de termes et même imprimer votre propre "
-"dictionnaire avec XSL-FO."
+"pouvez les utiliser pour générer des listes de mots pour des correcteurs "
+"orthographiques et des nouveaux dictionnaires, pour les importer dans votre "
+"propre base de données de termes et même imprimer votre propre dictionnaire "
+"avec XSL-FO."
 
 #: overview.php:30
 msgid ""
@@ -411,16 +415,26 @@ msgstr ""
 "pas allé si loin!"
 
 #: overview.php:41
+msgid "History"
+msgstr "Historique"
+
+#: overview.php:42
 msgid ""
-"This project was started in 2000 by Horst Eyermann. The databases\n"
-"are a compilation of various free sources. Please consult the\n"
-"respective TEI headers, READMEs and 00-database-info entries.\n"
-"The first databases were derived from Ergane."
+"This project was started in 2000 by Horst Eyermann. \n"
+"The first databases were derived from Ergane.\n"
+"Since then, FreeDict has much evolved and now offers both imported and hand-"
+"crafted dictionaries in various sizes.\n"
+"With the switch to TEI P5 in 2010, the project uses a comprehensive standard "
+"to encode human speech. This format also allows for the usage of the "
+"dictionaries in yet unforeseen use case scenario"
 msgstr ""
-"Horst Eyermann a débuté ce projet en 2000. Les bases de données\n"
-"sont une compilation de plusieurs sources libres. Merci de consulter les\n"
-"en-têtes TEI respectives, READMEs et données 00-database-info.\n"
-"Les premières bases de données ont été dérivées d' Ergane."
+"Horst Eyermann a commencé ce projet en 2000.\n"
+"Les premiers dictionnaires ont été dérivés d'Ergane.\n"
+"Depuis lors, Freedict a évolué et offre et des dictionnaires importé "
+"d'autres formats et des dictionnaires édité manuellement. \n"
+"Depuis 2010, le standard TEI P5 permet un encodage compréhensible de la "
+"parole humaine. La flexibilité xml du format TEI permet une adaptation à des "
+"scenarios d'utilisation encore inconnus."
 
 #: rock.php:4 rock.php:9
 msgid "Rock Linux Packages"
@@ -506,11 +520,11 @@ msgstr "Status de la traduction pour la langue du site"
 msgid "Language"
 msgstr "Langue"
 
-#: inc/gettext.php:93
+#: inc/gettext.php:95
 msgid "Website Language: "
 msgstr "Langue du site :"
 
-#: inc/gettext.php:95 inc/langcodes.php:18
+#: inc/gettext.php:97 inc/langcodes.php:18
 msgid "English"
 msgstr "Anglais"
 
@@ -758,3 +772,14 @@ msgid ""
 msgstr ""
 "Le fait que certains dictionnaires ne soient pas affichables sur cette\n"
 " plate-forme est dû à leur encodage."
+
+#, fuzzy
+#~ msgid ""
+#~ "This project was started in 2000 by Horst Eyermann. \n"
+#~ "TODO: document his work...\n"
+#~ "The first databases were derived from Ergane."
+#~ msgstr ""
+#~ "Horst Eyermann a débuté ce projet en 2000. Les bases de données\n"
+#~ "sont une compilation de plusieurs sources libres. Merci de consulter les\n"
+#~ "en-têtes TEI respectives, READMEs et données 00-database-info.\n"
+#~ "Les premières bases de données ont été dérivées d' Ergane."

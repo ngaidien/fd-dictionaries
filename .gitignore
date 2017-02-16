@@ -42,8 +42,10 @@ howto/inc/la1-la2.template.tei.escaped.xml
 *.index
 *.mo
 */__pycache__
+__pycache__
 *-*/stardict.build
-release
+*.swp
+*.swo
 website/editordoc.html
 website/flags-bedic.php
 website/flags-evolutionary.php
